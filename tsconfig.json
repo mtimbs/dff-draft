@@ -15,12 +15,8 @@
     "sourceRoot": "/",
     "baseUrl": "./",
     "paths": {
-      "@src/*": [
-        "src/*"
-      ],
-      "@factories/*": [
-        "src/factories/*"
-      ]
+      "@src/*": ["src/*"],
+      "@factories/*": ["src/factories/*"]
     }
   },
   "include": [

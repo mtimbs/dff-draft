@@ -11,10 +11,10 @@ describe('generating Player Pools', () => {
   it('can generate a player pool with DPPs', () => {
     expect.hasAssertions();
 
-    const pool = PlayerPoolFactory(10, 5);
+    const pool = PlayerPoolFactory(1000, 1000);
     const dpps = pool.filter((p) => p.positions.length === 2);
 
-    expect(dpps).toHaveLength(5);
-    expect(pool).toHaveLength(10);
+    expect(dpps).toHaveLength(1000);
+    expect(pool).toHaveLength(1000);
   });
 });
