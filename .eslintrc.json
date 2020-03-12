@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:jest/all",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "jest",
+    "@typescript-eslint"
+  ],
+  "root": true,
+  "globals": {},
+  "rules": {
+    "import/no-unresolved": [2, {"commonjs": true, "amd": true}]
+  },
+  "parser": "@typescript-eslint/parser",
+  "env": {},
+  "overrides": [],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@src", "./src"],
+          ["@factories", "./src/factories"]
+        ],
+        "extensions": [
+          ".ts",
+          ".js"
+        ]
+      }
+    }
+  }
+}
